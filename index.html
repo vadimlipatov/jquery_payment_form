@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Validation</title>
+</head>
+<body>
+<section class="modal hidden">
+    <div class="flex">
+        <button class="btn-close">⨉</button>
+    </div>
+    <div class="modal-window">
+        <!-- Форма -->
+        <form id="payment_form" method="post" action="">
+            <h2>Форма оплаты:</h2>
+            <div>
+                <label for="first_name">Имя:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Ivan"/>
+            </div>
+            <div>
+                <label for="last_name">Фамилия:</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Ivanov"/>
+            </div>
+            <div>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (123) 123 23 45"/>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="brend123@gmail.com"/>
+            </div>
+            <div>
+                <input type="submit" class="btn" value="Отправить"/>
+            </div>
+        </form>
+    </div>
+</section>
+
+<div class="overlay hidden"></div>
+<button class="btn btn-open">Оплатить</button>
+</body>
+</html>
